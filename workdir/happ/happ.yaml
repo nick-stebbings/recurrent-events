@@ -1,0 +1,15 @@
+---
+manifest_version: "1"
+name: recurrent-events-test
+description: ~
+roles:
+  - id: recurrent_events
+    provisioning:
+      strategy: create
+      deferred: false
+    dna:
+      bundled: "../dna/recurrent-events-test.dna"
+      properties: ~
+      uuid: ~
+      version: ~
+      clone_limit: 0

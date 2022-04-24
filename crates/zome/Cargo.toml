@@ -1,0 +1,21 @@
+[package]
+authors = ["nickolarse@riseup.net"]
+description = "RecurrentEvents zome for any Holochain app"
+documentation = "https://holochain-open-dev.github.io/recurrent_events"
+edition = "2018"
+homepage = "https://docs.rs/hc_zome_recurrent_events"
+license = "MIT"
+name = "hc_zome_recurrent_events"
+repository = "https://github.com/holochain-open-dev/recurrent_events"
+version = "0.0.1"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+name = "hc_zome_recurrent_events"
+
+[dependencies]
+derive_more = "0"
+serde = "1"
+
+hc_zome_recurrent_events_types = {path = "../types"}
+hdk = {version = "0.0.125", features = ["encoding"]}
